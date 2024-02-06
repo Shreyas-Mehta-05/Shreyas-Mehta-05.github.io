@@ -1,0 +1,518 @@
+.body{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: slategrey;
+}
+.first-color { 
+	background: #155263; 
+}
+	
+.second-color { 
+	background: #ff6f3c; 
+}
+
+.third-color { 
+	background: #ff9a3c; 
+}
+
+.fourth-color { 
+	background: #ffc93c; 
+}
+/*  */
+a{
+  text-decoration: none;
+  color:black;
+}
+.blog{
+    min-height: 100vh;
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(linear-grad.avif) cover no-repeat; */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(back-blog.jpeg) center/cover no-repeat;
+
+}
+.nav{
+    min-height: 12vh;
+    background:linear-gradient(#ffc93c, #ff9a3c);
+    display: flex;
+    justify-content: flex-start;
+    gap:60%;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.svg{
+    width: 4%;
+    height: 80%;
+}
+.heading{
+    width:80%;
+    background:radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(head-blog.jpeg) center/cover no-repeat;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-top-right-radius: -5% 30%;
+    border-top-left-radius: 45% 48%;
+    text-decoration: solid;
+    text-emphasis-style: double;
+    padding:2% 0 2% 0;
+    margin-top: 5%;
+    text-shadow: 2px 2px 2px #2e2a2a, -2px -2px 2px #000000, 2px -2px 2px #000000, -2px 2px 2px #000000;
+}
+.quote{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+.content {
+    background: linear-gradient(to bottom, rgba(156, 156, 156, 0.8), rgba(255, 255, 255, 0.315)), url(messi.jpg) center/cover no-repeat;
+    min-height: 80vh;
+    width: 80%;
+    margin: -1% auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding: 5% 0;
+}
+
+.image{
+    width: 40%;
+    height: 40vh;
+    
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.text{
+    width: 100%;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: justify;
+    padding: 0% 7%;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 1px #000000, -1px -1px 1px #fafafa, 1px -1px 1px #000000, -1px 1px 1px #ffffff;
+    
+}
+.heading-3{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #393939;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5% 0;
+    text-shadow: 2px 2px 2px #ffffff, -2px -2px 2px #ffffff, 2px -2px 2px #ffffff, -2px 2px 2px #ffffff;
+    text-decoration: underline;
+    text-emphasis-style: double;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.heading-3::before{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #393939;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}   
+.heading-3:hover, .heading-3:active, .heading-3:focus{
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #393939, -2px -2px 2px #393939, 2px -2px 2px #393939, -2px 2px 2px #393939;
+    transform: scale(1.05);
+    color: #fff700; 
+    cursor: pointer;
+}
+.footer{
+    margin-top: 5%;
+    min-height: 8vh;
+    width:80%;
+    margin: 0 auto;
+    background:linear-gradient(#ffc93c, #ff9a3c);
+    position:relative;
+}
+
+/*  */
+.blog-container {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+  
+  #blog {
+    width: 100%;
+    /* background-color: #00af49; */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(head-blog.jpeg) center/cover no-repeat;
+    opacity: 1;
+    border: 1px solid #d1d1d1;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color:white;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #8b8b8b, -1px -1px 1px #ffffff, 1px -1px 1px #aaaaaa, -1px 1px 1px #0000008a;
+  }
+  
+  .like-btn {
+    cursor: pointer;
+    background-color: #db3f34;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .like-btn:hover {
+    background-color: #b93f29;
+    transform: scale(1.05);
+  }
+  
+  .like-counter {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+  
+  .comments {
+    margin-top: 20px;
+  }
+  
+  #comment-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  #comment-input::placeholder {
+    color: #070707;
+  }
+  #comment-input:focus {
+    outline: none;
+    border-color: #2ecc71;
+    background-color: #f2f2f2;
+  }
+  #comment-btn {
+    cursor: pointer;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+  
+  #comment-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+  }
+  
+  #comment-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #comment-list li {
+    margin-bottom: 10px;
+    padding: 8px;
+    background:transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+  }
+  #comment-list li:hover{
+    transform: scale(1.01);
+    backdrop-filter: none;
+  }
+  .name{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #8b8b8b, -1px -1px 1px #000000, 1px -1px 1px #aaaaaa, -1px 1px 1px #0000008a;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    letter-spacing: 2px;
+  }
+
+
+  @media screen and (max-width: 1250px) and (min-width: 550px){
+    
+    
+    .content {
+        width: 90%;
+    }
+
+    .heading-3 {
+        width: 90%;
+        
+    }
+
+    .footer {
+        width: 90%;
+    }
+
+    .heading {
+        width: 90%;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+        padding:20px 50px;
+    }
+
+    .nav {
+        min-height: 100px;
+        gap: 50%;
+    }
+
+    svg {
+        width: 50px;
+        height: 50px;
+    }
+    .quote{
+        font-size: 1rem;
+    }
+    .text{
+        font-size: .8rem;
+        text-shadow: 0.5px 0px 0px #000000, -1px -1px 0px #fafafa, 1px -1px 0px #000000, -1px 1px 0px #ffffff;
+    }
+    .heading-3{
+        font-size: 1.2rem;
+        text-shadow: 2px 2px 1px #ffffff, -2px -2px 1px #f1f1f1, 2px -2px 1px #ffffff, -2px 2px 1px #ffffff;
+    }
+    .heading-3::before{
+        height: 2px;
+    }
+    .footer{
+        min-height: 75px;
+        border: none;
+    }
+    .blog-container {
+        font-size: 14px;
+    }
+    #blog {
+        padding: 10px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .like-btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .like-counter {
+        font-size: 16px;
+    }
+    #comment-input {
+      width: auto;
+        padding: 5px;
+        font-size: 14px;
+    }
+    #comment-btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    #comment-list li {
+        padding: 5px;
+        font-size: 14px;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .content{
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+  .content {
+    width: 90%;
+}
+
+.heading-3 {
+    width: 90%;
+}
+
+.footer {
+    width: 90%;
+}
+
+.heading {
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.nav {
+    min-height: 80px;
+    gap: 50%;
+}
+
+svg {
+    width: 40px;
+    height: 40px;
+}
+.quote{
+    font-size: 1rem;
+}
+.text{
+    font-size: .8rem;
+    text-shadow: 0.5px 0px 0px #000000, -1px -1px 0px #fafafa, 1px -1px 0px #000000, -1px 1px 0px #ffffff;
+}
+.heading-3{
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 1px #ffffff, -2px -2px 1px #f1f1f1, 2px -2px 1px #ffffff, -2px 2px 1px #ffffff;
+}
+.heading-3::before{
+    height: 2px;
+}
+.footer{
+    min-height: 75px;
+}
+.blog-container {
+    font-size: 14px;
+}
+#blog {
+    padding: 10px;
+} 
+h2{
+    font-size: 18px;
+}
+.like-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.like-counter {
+    font-size: 16px;
+}
+#comment-input {
+  width: auto;
+    padding: 5px;
+    font-size: 14px;
+}
+#comment-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+#comment-list li {
+    padding: 5px;
+    font-size: 14px;
+}
+.name{
+    font-size: 14px;
+}
+.content{
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+}
+  .heading {
+    box-sizing: border-box;
+    padding:4% 8%;
+    width: 90%;
+    font-size: .60rem;
+    
+  }
+  .quote{
+    font-size: .6rem;
+  }
+  .text{
+    font-size: .5;
+  }
+  .heading-3{
+    font-size: .8rem;
+    text-shadow: 0px 2px 0px #94a3b8, -1px 0px 0px #475569, 0px -1px 0px #000, -2px 2px 0px #ffffff;
+  }
+    .content{
+      /* background-size: contain; */
+      background-repeat: no-repeat;
+      
+    }
+    .content {
+      position: relative;
+      width: 90%;
+      overflow: hidden;
+      background-attachment: fixed;
+  }
+  
+  .content::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.6)), url(messi.jpg) center/cover no-repeat;
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      z-index: -1; 
+      opacity: 0.8; 
+      transition: opacity 0.3s;
+  }
+  
+  .content:hover::before {
+      opacity: 1;
+  }
+  
+  .content p {
+      position: relative;
+      z-index: 1;
+      
+  }
+  .name{
+    font-size: 14px;
+    opacity: 0.8;
+    text-shadow: 0px 2px 0px #94a3b8, -1px 0px 0px #475569, 0px -1px 0px #000, -2px 2px 0px #ffffff;
+    color: #000000;
+    top:-40px;
+  }
+  
+}
+
+
+.text.highlighted {
+  color: #fff700; 
+  text-shadow: 0.5px 0px 0px #ebef00, -1px -1px 0px #000000, 1px -1px 0px #ffea00, -1px 1px 0px #000000;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+
+}
