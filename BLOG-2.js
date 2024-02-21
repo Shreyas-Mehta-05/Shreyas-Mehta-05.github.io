@@ -5,11 +5,11 @@ const commentInput = document.getElementById('comment-input');
 const commentList = document.getElementById('comment-list');
 
 
-let likes = parseInt(localStorage.getItem('likes')) || 0;
+let likes = parseInt(localStorage.getItem('likes1')) || 0;
 likeCounter.textContent = likes;
 
 
-let comments = JSON.parse(localStorage.getItem('comments')) || [];
+let comments = JSON.parse(localStorage.getItem('comments1')) || [];
 
 
 comments.forEach(comment => {
@@ -19,14 +19,14 @@ comments.forEach(comment => {
 likeBtn.addEventListener('click', () => {
   likes++;
   likeCounter.textContent = likes;
-  localStorage.setItem('likes', likes);
+  localStorage.setItem('likes1', likes);
 });
 
 document.getElementById('comment-btn').addEventListener('click', () => {
   const comment = commentInput.value.trim();
   if (comment !== '') {
     comments.push(comment);
-    localStorage.setItem('comments', JSON.stringify(comments));
+    localStorage.setItem('comments1', JSON.stringify(comments));
     displayComment(comment);
     commentInput.value = '';
   }

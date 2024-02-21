@@ -10,6 +10,7 @@ const toggleDarkMode = () => {
     } else {
         profileImg.src = 'new.jpeg'; 
         achieveImg.src = 'Achieve.jpeg'; 
+        profileImg.style="border:2px solid white; backdrop-filter: blur(0px);"
     }
 };
 
